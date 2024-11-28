@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2 {
+  color: #007bff;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+label, select, input, button {
+  margin: 5px;
+  padding: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #007bff;
+}
+
+tfoot {
+  font-weight: bold;
+  background-color: #e9ecef;
+}
+
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#expense-chart {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  table {
+      width: 100%;
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+  .form-container {
+      display: flex;
+      flex-direction: column; /* Stack form elements */
+      align-items: center; /* Center align elements */
+  }
+
+  label, select, input, button {
+      width: 90%; /* Full width for inputs */
+      margin: 10px 0; /* More margin for spacing */
+  }
+
+  #expense-chart {
+      width: 100%; /* Full width for chart */
+      height: auto; /* Maintain aspect ratio */
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div class="form-container">
+        <form id="expense-form">
+            <label for="category-select">Category:</label>
+            <select id="category-select">
+                <option value="Rent">Rent</option>
+                <option value="Transport">Transport</option>
+                <option value="Relaxing">Relaxing</option>
+                <option value="College Fee">College Fee</option>
+            </select>
+            <label for="amount-input">Amount:</label>
+            <input type="number" id="amount-input" placeholder="Enter amount">
+            <label for="date-input">Date:</label>
+            <input type="date" id="date-input">
+            <button type="button" id="add-update-btn">Add Expense</button>
+        </form>
+    </div>
+
+    <h2>Expenses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="expense-table-body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td id="total-amount">0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Expense Chart</h2>
+    <div class="pie-chart-container">
+        <canvas id="expense-chart"></canvas>
+    </div>
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
